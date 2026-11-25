@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "GC Forms Storage Inspector",
+  "description": "A small on-page inspector for form session and local storage.",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://forms-formulaires.alpha.canada.ca/*",
+        "https://forms-formulaires.canada.ca/*",
+        "http://localhost/*",
+        "http://127.0.0.1/*"
+      ],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
