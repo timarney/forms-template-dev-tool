@@ -2,6 +2,8 @@
 
 A small Chrome extension that adds a show/hide JSON inspector to GC Forms pages. It reads the current page's browser storage, with `sessionStorage` and the `form-storage` key selected by default. It also supports other session and local storage keys.
 
+![GC Forms Storage Inspector showing form data and a pinned JSON value](assets/storage-inspector.png)
+
 ## Load in Chrome
 
 1. Open `chrome://extensions`.
